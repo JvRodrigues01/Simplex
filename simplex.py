@@ -287,9 +287,16 @@ if __name__ == '__main__':
         printaTabela(iterac[len(iterac) - 1], (numvar + numres) + 1, (numres + 1))
 
         if obj:
-            print(f'O maior vaior de Z sera = {iterac[len(iterac)-1][numres][numvar + numres]}')
+            print(f'O valor de Z sera = {iterac[len(iterac)-1][numres][numvar + numres]}')
+            teste = []
+            for i in iterac[len(iterac) - 1]:
+                teste.append({i[-1]})
+
+            print(f'y = {teste[0]}')
+            print(f'f2 = {teste[1]}')
+            print(f'x = {teste[2]}')
         else:
-            print(f'O menor vaior de Z sera = {iterac[len(iterac) - 1][numres][numvar + numres] * -1}')
+            print(f'O valor de Z sera = {iterac[len(iterac) - 1][numres][numvar + numres] * -1}')
         print()
 
         analisa = bool(int(input('Deseja Analise de Sensibilidade(1) ou Não(0) ? ')))
