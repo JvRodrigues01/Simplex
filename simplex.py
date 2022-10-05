@@ -295,6 +295,8 @@ if __name__ == '__main__':
             print(f'y = {teste[0]}')
             print(f'f2 = {teste[1]}')
             print(f'x = {teste[2]}')
+            print(f'f1 = {0}')
+            print(f'f2 = {0}')
         else:
             print(f'O valor de Z sera = {iterac[len(iterac) - 1][numres][numvar + numres] * -1}')
         print()
