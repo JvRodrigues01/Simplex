@@ -289,14 +289,15 @@ if __name__ == '__main__':
         if obj:
             print(f'O valor de Z sera = {iterac[len(iterac)-1][numres][numvar + numres]}')
             teste = []
+            valoresZerados = []
             for i in iterac[len(iterac) - 1]:
                 teste.append({i[-1]})
-
+                valoresZerados.append({i[0]})
             print(f'y = {teste[0]}')
             print(f'f2 = {teste[1]}')
             print(f'x = {teste[2]}')
-            print(f'f1 = {0}')
-            print(f'f2 = {0}')
+            print(f'f1 = {valoresZerados[0]}')
+            print(f'f3 = {valoresZerados[1]}')
         else:
             print(f'O valor de Z sera = {iterac[len(iterac) - 1][numres][numvar + numres] * -1}')
         print()
